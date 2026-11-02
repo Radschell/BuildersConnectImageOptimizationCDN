@@ -20,7 +20,6 @@ In Exercise 1, we start directly in the **Cloud CDN** section of the Google Clou
 
 &nbsp;
 
-![][image1]
 
 ### **Step 1: Start in Cloud CDN & Create a Bucket \+ Load Balancer**
 
@@ -83,7 +82,7 @@ Reduce the file size of the **`8.8 MB`** master JPEG at the edge while keeping i
 Downscale the `5504×3072` (`8.8 MB`) master image to `600 px` wide for responsive mobile and web delivery (when you specify only `width`, Cloud CDN automatically preserves the `16:9` aspect ratio at `600×335` px):
 
 * **URL:** `http://<LB_IP>/premium-asset.jpg?imop=resize,width=600`  
-* `![Exercise 2 output: Resized 600px wide banner][image3]`
+
 
 ### **Exercise 3: Rectangular Product Cutout — Isolating the Silver Camera Lens (crop)**
 
@@ -91,7 +90,7 @@ Isolate the **brushed-silver camera lens** in the upper center of `premium-asset
 
 * **Crop Inset Fractions:** Remove `39%` from left (`left=0.39`), `40%` from right (`right=0.40`), `14%` from top (`top=0.14`), and `48%` from bottom (`bottom=0.48`), then resize to `480 px` wide and convert to `WebP`:  
 * **URL:** `http://<LB_IP>/premium-asset.jpg?imop=crop,left=0.39,right=0.40,top=0.14,bottom=0.48;resize,width=480;convert,format=webp`  
-* `![Exercise 3 output: Rectangular product cutout of silver camera lens][image4]`
+
 
 ### **Exercise 4: Circular UI Badge — Isolating the Navigation Compass (crop,shape=circle)**
 
@@ -99,7 +98,7 @@ Isolate the **round white navigation compass** in the lower center of `premium-a
 
 * **Crop Inset Fractions:** `shape=circle`, remove `39%` from left (`left=0.39`), `39%` from right (`right=0.39`), `50%` from top (`top=0.50`), and `8%` from bottom (`bottom=0.08`), resized to `400 px` wide:  
 * **URL:** `http://<LB_IP>/premium-asset.jpg?imop=crop,shape=circle,left=0.39,right=0.39,top=0.50,bottom=0.08;resize,width=400;convert,format=png`  
-* `![Exercise 4 output: Circular UI badge isolating the navigation compass][image5]`
+
 
 ### **Exercise 5: Visual Filters — Blurred Hero Background (blur) & Crisp Product Detail (sharpen, tone)**
 
@@ -107,7 +106,7 @@ Apply edge visual filters directly from the same master file to create a soft bl
 
 * **Blurred Hero Background (`blur`):** `http://<LB_IP>/premium-asset.jpg?imop=resize,width=800;blur,strength=40;convert,format=webp`  
 * **Crisp Product Detail (`sharpen`):** `http://<LB_IP>/premium-asset.jpg?imop=crop,left=0.39,right=0.40,top=0.14,bottom=0.48;resize,width=600;sharpen,strength=35;quality,level=85;convert,format=webp`  
-* `![Exercise 5 output: Blurred hero background and crisp product detail][image6]`
+
 
 ### **Exercise 6: Explore Additional Transformation Types**
 
