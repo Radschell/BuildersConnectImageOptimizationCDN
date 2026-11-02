@@ -63,8 +63,6 @@ Once your Load Balancer and Cloud CDN are live, you can transform `premium-asset
 
 Our master workshop image (**premium-asset.jpg**, `5504×3072` pixels, **`8.8 MB`** raw JPEG) is a high-resolution studio flat-lay photograph featuring four distinct subjects arranged across a light-grey stone surface:
 
-![Master asset preview: premium-asset-4000x2000.jpg (5504x3072 px, 8.8 MB)][image2]
-
 * **Left Subject:** Olive-green canvas travel backpack with brown leather straps (`left=0.00,right=0.68`)  
 * **Top-Center Subject:** Brushed-silver camera lens (`left=0.39,right=0.40,top=0.14,bottom=0.48`) — used for rectangular product cutout cropping (`crop`)  
 * **Bottom-Center Subject:** Round white navigation compass (`left=0.39,right=0.39,top=0.50,bottom=0.08`) — used for circular UI badge cropping (`crop,shape=circle`)  
